@@ -1,7 +1,6 @@
-package com.example.gauravagarwal.quotes.Widget;
+package com.example.gauravagarwal.quotes.widget;
 
 import android.content.Intent;
-import android.os.RemoteCallbackList;
 import android.widget.RemoteViewsService;
 
 /**

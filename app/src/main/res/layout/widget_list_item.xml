@@ -10,14 +10,14 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="@dimen/widget_quote_pad"
-        android:text="Quote"
+        android:text="@string/appwidget_text"
         android:textSize="@dimen/widget_quote_size" />
 
     <TextView
         android:id="@+id/author"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="right"
+        android:gravity="end"
         android:paddingBottom="@dimen/widget_quote_pad"
         android:paddingLeft="@dimen/widget_quote_pad"
         android:paddingRight="@dimen/widget_quote_pad"

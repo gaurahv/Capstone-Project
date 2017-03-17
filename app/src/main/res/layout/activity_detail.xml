@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.gauravagarwal.quotes.Search.DetailActivity">
+    tools:context="com.example.gauravagarwal.quotes.search.DetailActivity">
 
 
     <include layout="@layout/toolbar_layout"></include>
@@ -17,8 +17,8 @@
         android:gravity="center"
         android:paddingBottom="@dimen/detail_title_pad_bottom"
         android:paddingTop="@dimen/detail_title_pad"
-        android:contentDescription="Title"
-        android:text="Title"
+        android:contentDescription="@string/title_text"
+        android:text="@string/title_text"
         android:textSize="@dimen/detail_title_font"
         android:textStyle="bold" />
 
@@ -31,9 +31,9 @@
             android:id="@+id/checkBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="Follow"
+            android:contentDescription="@string/checkbox_text"
             android:padding="@dimen/checkbox_pad"
-            android:text="Follow" />
+            android:text="@string/checkbox_text" />
     </LinearLayout>
 
 

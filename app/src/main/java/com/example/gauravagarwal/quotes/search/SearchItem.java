@@ -1,4 +1,4 @@
-package com.example.gauravagarwal.quotes.Search;
+package com.example.gauravagarwal.quotes.search;
 
 /**
  * Created by Gaurav Agarwal on 18-02-2017.

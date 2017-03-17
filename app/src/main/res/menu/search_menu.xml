@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/addFavorite"
-        android:title="Follow"
+        android:title="@string/follow_caps"
         app:showAsAction="ifRoom"></item>
 
     <item
         android:id="@+id/myFavorite"
-        android:title="My Favorites"
+        android:title="@string/my_favorites_text"
         app:showAsAction="ifRoom"></item>
 
     <item
         android:id="@+id/sign"
-        android:title="Sign out"
+        android:title="@string/btn_sign_out"
         app:showAsAction="never"></item>
 </menu>

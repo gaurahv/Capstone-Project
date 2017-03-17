@@ -1,4 +1,4 @@
-package com.example.gauravagarwal.quotes.Widget;
+package com.example.gauravagarwal.quotes.widget;
 
 import android.appwidget.AppWidgetManager;
 import android.content.Context;
@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
-import com.example.gauravagarwal.quotes.Quote.Quote;
 import com.example.gauravagarwal.quotes.R;
 import com.example.gauravagarwal.quotes.Utils;
+import com.example.gauravagarwal.quotes.quote.Quote;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -36,10 +36,10 @@ class QuoteRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
 
     @Override
     public void onCreate() {
+        if (Utils.getAuth().getCurrentUser() == null) return;
         String userId = Utils.getAuth().getCurrentUser().getUid();
         final DatabaseReference rootRef = Utils.getDatabase().getReference();
 
-        if(userId == null)  return;
         rootRef.child("users")
                 .child(userId)
                 .child("quotes")
@@ -47,7 +47,7 @@ class QuoteRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
                 .addChildEventListener(new ChildEventListener() {
                     @Override
                     public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                        final String id = ((String) dataSnapshot.getKey());
+                        final String id = dataSnapshot.getKey();
                         rootRef.child("quotes").child(id).addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -71,7 +71,7 @@ class QuoteRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
 
                     @Override
                     public void onChildRemoved(DataSnapshot dataSnapshot) {
-                        for(int i=0; i<myArrayList.size(); i++){
+                        for (int i = 0; i < myArrayList.size(); i++) {
                             if (myArrayList.get(i).getId().compareTo(dataSnapshot.getKey()) == 0) {
                                 myArrayList.remove(i);
                                 break;

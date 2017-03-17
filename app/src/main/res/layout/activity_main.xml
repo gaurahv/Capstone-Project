@@ -15,9 +15,9 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="16dp"
-        android:text="My Feed"
+        android:text="@string/my_feed_text"
         android:textSize="20sp"
-        android:contentDescription="My Feed"
+        android:contentDescription="@string/my_feed_text"
         android:textStyle="bold" />
 
     <android.support.v7.widget.RecyclerView

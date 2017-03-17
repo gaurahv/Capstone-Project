@@ -1,4 +1,4 @@
-package com.example.gauravagarwal.quotes.Search;
+package com.example.gauravagarwal.quotes.search;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;

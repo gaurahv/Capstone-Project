@@ -12,20 +12,20 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".Search.SearchActivity"
+            android:name=".search.SearchActivity"
             android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".Search.DetailActivity" />
-        <activity android:name=".Auth.LoginActivity" />
-        <activity android:name=".Auth.SignupActivity">
+        <activity android:name=".search.DetailActivity" />
+        <activity android:name=".auth.LoginActivity" />
+        <activity android:name=".auth.SignupActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Auth.ResetPasswordActivity" />
+        <activity android:name=".auth.ResetPasswordActivity" />
 
-        <receiver android:name=".Widget.QuoteAppWidget">
+        <receiver android:name=".widget.QuoteAppWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -40,7 +40,7 @@
             android:parentActivityName=".MainActivity"></activity>
 
         <service
-            android:name=".Widget.QuoteRemoteViewsService"
+            android:name=".widget.QuoteRemoteViewsService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
     </application>
 

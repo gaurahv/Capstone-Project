@@ -1,12 +1,9 @@
-package com.example.gauravagarwal.quotes.Search;
+package com.example.gauravagarwal.quotes.search;
 
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-import com.example.gauravagarwal.quotes.Search.AuthorFragment;
-import com.example.gauravagarwal.quotes.Search.CatFragment;
 
 /**
  * Created by Gaurav Agarwal on 19-02-2017.

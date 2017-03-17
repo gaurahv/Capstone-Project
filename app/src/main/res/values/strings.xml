@@ -45,4 +45,16 @@
     <string name="failed_reset">Failed to send reset email!</string>
     <string name="password_short">Password too short, enter minimum 6 characters!</string>
     <string name="user_created">User Created</string>
+    <string name="logo">logo</string>
+    <string name="favorite">favorite</string>
+    <string name="title_text">Title</string>
+    <string name="checkbox_text">Follow</string>
+    <string name="my_favorites_text">My Favorites</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="my_feed_text">My Feed</string>
+    <string name="btn_back_text">back</string>
+    <string name="quote_text">Quote</string>
+    <string name="author_text">Author</string>
+    <string name="search_item_text">Search Item</string>
+    <string name="follow_caps">FOLLOW</string>
 </resources>

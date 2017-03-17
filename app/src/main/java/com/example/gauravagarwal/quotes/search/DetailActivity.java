@@ -1,4 +1,4 @@
-package com.example.gauravagarwal.quotes.Search;
+package com.example.gauravagarwal.quotes.search;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -11,8 +11,8 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 
-import com.example.gauravagarwal.quotes.Quote.Quote;
-import com.example.gauravagarwal.quotes.Quote.QuoteAdapter;
+import com.example.gauravagarwal.quotes.quote.Quote;
+import com.example.gauravagarwal.quotes.quote.QuoteAdapter;
 import com.example.gauravagarwal.quotes.R;
 import com.example.gauravagarwal.quotes.Utils;
 import com.google.firebase.database.ChildEventListener;

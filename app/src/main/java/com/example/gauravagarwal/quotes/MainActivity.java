@@ -10,10 +10,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.gauravagarwal.quotes.Auth.SignupActivity;
-import com.example.gauravagarwal.quotes.Quote.Quote;
-import com.example.gauravagarwal.quotes.Quote.QuoteAdapter;
-import com.example.gauravagarwal.quotes.Search.SearchActivity;
+import com.example.gauravagarwal.quotes.auth.SignupActivity;
+import com.example.gauravagarwal.quotes.quote.Quote;
+import com.example.gauravagarwal.quotes.quote.QuoteAdapter;
+import com.example.gauravagarwal.quotes.search.SearchActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -36,9 +36,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Utils.changeFilter("quotes");
-        Utils.changeFilter("tagWise");
-        Utils.changeFilter("authorWise");
+        new SetFilterTask().execute();
     }
 
     @Override
@@ -71,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 .addChildEventListener(new ChildEventListener() {
                     @Override
                     public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                        final String id1 = ((String) dataSnapshot.getKey());
+                        final String id1 = dataSnapshot.getKey();
                         rootRef.child(filter)
                                 .child(id1)
                                 .limitToFirst(5)

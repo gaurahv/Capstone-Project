@@ -1,4 +1,4 @@
-package com.example.gauravagarwal.quotes.Quote;
+package com.example.gauravagarwal.quotes.quote;
 
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;

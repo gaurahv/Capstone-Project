@@ -1,4 +1,4 @@
-package com.example.gauravagarwal.quotes.Search;
+package com.example.gauravagarwal.quotes.search;
 
 import android.content.Context;
 import android.content.Intent;

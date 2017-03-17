@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.gauravagarwal.quotes.Search.AuthorFragment">
+    tools:context="com.example.gauravagarwal.quotes.search.AuthorFragment">
 
     <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
         android:id="@+id/auth_recycler_view"

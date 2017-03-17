@@ -1,4 +1,4 @@
-package com.example.gauravagarwal.quotes.Auth;
+package com.example.gauravagarwal.quotes.auth;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

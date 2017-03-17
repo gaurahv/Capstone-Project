@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.gauravagarwal.quotes.Auth.LoginActivity">
+    tools:context="com.example.gauravagarwal.quotes.auth.LoginActivity">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -20,6 +20,7 @@
             android:layout_height="@dimen/logo_w_h"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="30dp"
+            android:contentDescription="@string/logo"
             android:src="@drawable/logo" />
 
         <android.support.design.widget.TextInputLayout
@@ -31,7 +32,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:contentDescription="Email"
                 android:hint="@string/hint_email"
                 android:inputType="textEmailAddress"
                 android:textColor="@android:color/white"
@@ -47,7 +47,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:contentDescription="Password"
                 android:hint="@string/hint_password"
                 android:inputType="textPassword"
                 android:textColor="@android:color/white"
@@ -61,7 +60,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:contentDescription="Login"
+            android:contentDescription="@string/btn_login"
             android:background="@color/colorAccent"
             android:text="@string/btn_login"
             android:textColor="@android:color/black" />
@@ -85,11 +84,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
             android:background="@null"
-            android:contentDescription="Sign Up"
+            android:contentDescription="@string/btn_sign_up"
             android:text="@string/btn_link_to_register"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
     </LinearLayout>
 
     <ProgressBar

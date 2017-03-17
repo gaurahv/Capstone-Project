@@ -7,8 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
-import com.example.gauravagarwal.quotes.Quote.Quote;
-import com.example.gauravagarwal.quotes.Quote.QuoteAdapter;
+import com.example.gauravagarwal.quotes.quote.Quote;
+import com.example.gauravagarwal.quotes.quote.QuoteAdapter;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -61,7 +61,7 @@ public class FavoriteActivity extends AppCompatActivity {
                 .addChildEventListener(new ChildEventListener() {
                     @Override
                     public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                        final String id = ((String) dataSnapshot.getKey());
+                        final String id = dataSnapshot.getKey();
                         rootRef.child("quotes").child(id).addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {

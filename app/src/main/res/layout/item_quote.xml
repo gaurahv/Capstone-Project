@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="@dimen/quote_padding"
-                android:text="Quote"
+                android:text="@string/quote_text"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -38,6 +38,7 @@
                     android:layout_height="@dimen/fav_icon_dimen"
                     android:layout_gravity="center_vertical"
                     android:adjustViewBounds="true"
+                    android:contentDescription="@string/favorite"
                     android:background="@android:color/white"
                     android:padding="@dimen/fav_icon_pad"
                     android:scaleType="fitCenter"
@@ -47,9 +48,9 @@
                     android:id="@+id/author"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:padding="@dimen/author_pad"
-                    android:text="Author"
+                    android:text="@string/author_text"
                     android:textSize="@dimen/author_text"
                     android:textStyle="bold" />
             </LinearLayout>
